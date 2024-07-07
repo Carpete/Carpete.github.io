@@ -16,44 +16,72 @@
 }
 
 .navbar {
-    background-color: beige;
+    background-color: white;
 }
 
-.c-item {
-    height: 600px;
+.subsection-custom {
+    position: relative;
+    width: 100%;
+    height: 850px;
+    background-image: url('/images/dario-valenzuela-PAGBeJrLiDA-unsplash.jpg'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;  
 }
 
-.c-img {
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(0.7);
-   }
-
-/* Carousel */
-
-.carousel-control-next-icon {
-    border-radius: 10px solid white;
-}
-
-.carousel-control-prev-icon {
-    border-radius: 10px solid
+.central-custom-text {
+    padding-bottom: 250px;
+    width: 200px;
+    height: 100px;
+    color: white;
+    text-align: center;
 }
 
 /* First Section */
 
 .first-custom-section {
-    padding-top: 100px;
+    padding-top: 50px;
 }
 
 .first-custom-section-img {
-    height: 500px;
-    width: 100px;
+    max-width: 100%;
+    height: auto;
 }
 
-.first-custom-farao, h2{
-    justify-content: center;
+.first-custom-farao {
+    justify-content: left;
 }
 
 .first-custom-section-h2 {
-    padding-left: 37%;
+    justify-content: flex-start;
+    text-align: flex-start;
+}
+
+.first-custom-section-left {
+    background-color: aqua;
+}
+
+ul {
+    list-style-type: none;  
+}
+
+.second-custom-section-img {
+    width: 500px;
+    height: auto;
+}
+
+.contact-custom-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: black; 
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
 }
