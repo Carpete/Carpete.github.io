@@ -47,9 +47,9 @@
             <div class="container">
                 <div class="row first-custom-farao">
                     <div class="col-lg-8 col-md-8">
-                        <h2 class="fs-1">O FARAÓ</h2>
+                        <h2 class="fs-2">O FARAÓ</h2>
                         <p class="first-custom-section-p fs-5">
-                            O Faraó é uma casa de repouso localizado no centro de Faro, é um espaço que disponibiliza assistência
+                            O Faraó é uma casa de repouso localizado no coração de Faro, é um espaço que disponibiliza assistência
                             personalizada e permanente a idosos que não podem permanecer em suas casas sem supervisão ou ajuda.
                             <br>
                             <!Além das instalações modernas e confortáveis, O Faraó oferece uma ampla gama de atividades recreativas e terapêuticas, desenhadas para 
@@ -72,7 +72,10 @@
                                 <p>Acompanhamento Contínuo</p>
                             </li>
                         </ul>
-                        <a href="quemsomos.html">Hello World</a>
+                        <div class="first-section-link">
+                            <a href="quemsomos.html">Saber Mais</a>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -82,16 +85,18 @@
         <section class="second-custom-section py-4">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 nav-list-container d-flex justify-content-center align-item-center">
+                    <div class="col-12 nav-list-container d-flex justify-content-center align-items-center">
                         <h2>Serviços</h2>
                     </div>
                         <div class="row py-4">
                             <div class="col-lg-6 col-md-6 fs-5">
                                 <p>
-                                    Os serviços prestados pela casa de repouso em faro
+                                    Os serviços prestados pela casa de repouso em faro são variados e todos com o intuito de 
+                                    disponibilizar o melhor conforto para o idoso.
                                 </p>
+                                <a href="servicos.html"><h2>Serviços</h2></a>
                             </div>
-                            <div class="col-lg-6 col-md-6">
+                            <div class="col-lg-6 col-md-6 d-flex justify-content-center align-item-center">
                                 <img class="second-custom-section-img" src="images/dominik-lange-VUOiQW4OeLI-unsplash.jpg">
                             </div>
                         </div>
@@ -100,16 +105,38 @@
         </section>
     </div>
     <div>
-        <section>
+        <section class="candidate-custom-section">
             <div class="container">
-            
+                <div class="row">
+                    <a class="candidate-choice-custom col-lg-5 col-md-5 d-flex justify-content-center align-items-center" href="#Target" onclick="loadChoice(1)">
+                        <ul class="d-flex justify-content-center align-items-center">
+                            <li>
+                                Candidatura para Idoso
+                            </li>
+                        </ul>
+                </a>
+                    <div class="col-lg-2 col-md-2 col-sm-2">
+
+                    </div>
+                    <a class="candidate-choice-custom col-lg-5 col-md-5 d-flex justify-content-center align-items-center" href="#Target" onclick="loadChoice(2)">
+                            <ul class="d-flex justify-content-center align-items-center">
+                                <li>
+                                    Candidatura para Emprego
+                                </li>
+                            </ul>
+                    </a>
+                </div>
+                
+            </div>
+            <div id="Target" class="target d-flex justify-content-start align-items-center">
+
             </div>
         </section>
     </div>
     <div>
-        <section class="contact-custom-section">
+        <section id="contacts" class="contact-custom-section">
             <div class="contact-container">
-                <div>
+                <div class="contact-container-h2">
                     <h4>Visite-nos</h4>
                 </div>
                 <div>   
@@ -118,13 +145,22 @@
                     <br>
                         Largo da Madalena, 8000-255 Faro
                     <br>
-                        Email:<a href="mailto:">email</a>
+                        Email: <a href="mailto:">geral@casaderepousofarao.pt</a>
                     <br> 
-                        Telefone
+                        Telefone: 289823356
+                    <br>
+                        2024 <i class="fa-regular fa-copyright"></i> All rights reserved to O FARAÓ - Casa de Repouso
                     </p>
-                    <p class="">
-                        2024 @ All rights reserved O FARAÓ - Casa de Repouso
-                    </p>
+                </div>
+                <div class="contact-custom-socials d-flex justify-content-end align-content-end align-items-end">
+                    <ul>
+                        <li>
+                            <a href="https://www.instagram.com/farao.lar?igsh=MTZ2enlubmFseW5mNA=="><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/people/Casa-de-Repouso-Fara%C3%B3/61555987790891/"><i class="fa-brands fa-facebook"></i></a>
+                        </li>
+                    </ul>
                 </div>
 
             </div>
@@ -133,5 +169,7 @@
 </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/40cabe5444.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
