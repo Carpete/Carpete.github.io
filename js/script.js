@@ -1,22 +1,23 @@
-const targetE1 = document.querySelector('.target');
+function toggleDiv(targetId) {
+    const target1 = document.getElementById('Target1');
+    const target2 = document.getElementById('Target2');
 
-const loadChoice = number => {
-    fetch(`./choice-${number}.html`)
-        .then(res => {
-            if(res.ok) {
-                return res.text()
-            }
-        })
-        .then(htmlChoice => {
-            targetE1.innerHTML = htmlChoice;
-        });
-};
+    if (targetId === 1) {
+        if (target1.style.display === 'none' || target1.style.display === '') {
+            target1.style.display = 'block';
+            target2.style.display = 'none';
+        } else {
+            target1.style.display = 'none';
+        }
+    } else if (targetId === 2) {
+        if (target2.style.display === 'none' || target2.style.display === '') {
+            target2.style.display = 'block';
+            target1.style.display = 'none';
+        } else {
+            target2.style.display = 'none';
+        }
+    }
+}
 
-const unloadChoice = () => {
-    targetE1.innerHTML = '';
-};
-
-const toggleChoice = number => {
-    if(targetE1.innerHTML == htmlChoice)
-        then(targetE1.innerHTML = '');
-};
+document.getElementById('Target1').style.display = 'none';
+document.getElementById('Target2').style.display = 'none';

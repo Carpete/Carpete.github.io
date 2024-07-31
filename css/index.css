@@ -6,45 +6,160 @@
     height: 100%;
 }
 
+/* NavBar */
+
 .navbar-brand {
     padding-left: 20px;
 }
 
+.nav-link {
+    font-weight: 600;
+    font-size: 20px;
+    color: #141572; 
+    margin-right: 7px;
+}
+
+.nav-link:hover {
+    color: #1A28BF;
+}
+
+.nav-link-last {
+    margin-right: 45px;
+}
+
 .logo-img {
-    width: 150px;
+    width: 160px;
     height: auto;
 }
 
 .navbar {
-    background-color: white;
+    background-color: #F9F4E8;
 }
 
+.navbar-nav .nav-link {
+    color: #30399C;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #1A28BF;
+}
+
+.navbar-custom {
+    padding-right: 20px;
+}
+
+.nav-item-job a{
+    border-radius: 30px;
+    color: white;
+}
+
+
 .subsection-custom {
+    padding-top: 500px;
     position: relative;
     width: 100%;
-    height: 700px;
+    height: 850px;
     background-image: url('/images/dario-valenzuela-PAGBeJrLiDA-unsplash.jpg');
     background-size: cover;
     background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+}
+
+.subsection-custom::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    filter: brightness(60%);
+    z-index: 1;
 }
 
 .central-custom-text {
-    padding-bottom: 150px;
-    width: 200px;
-    height: 20px;
-    color: white;
+    padding: 20px;
+    width: 100%;
+    color: #ffffff;
     text-align: center;
-    font-size: large;
-    background-color: black;
+    font-size: 22px;
+    font-weight: 600;
+    z-index: 2;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.central-custom-text h2 {
+    color: #E3C16D;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 900;
+    margin: 0 0 5px 0;
+}
+
+.central-custom-text button {
+    font-size: 20px;
+    margin-right: 25px;
+    padding: 15px;
+    border-radius: 30px;
+    font-weight: 600;
+    border: 0.5em, black;
+}
+
+.button1 {
+    background-color: rgba(0,0,0,0);
+    color: white;
+    border-color: white;
+    border-style: solid;
+    margin-left: 25px;
+}
+
+.button1:hover {
+    color: black;
+    background-color: white;
+    border-color: black;
+}
+
+.button2 {
+    color: white;
+    background-color: #E3C16D;
+    border: 0px;
+}
+
+.button2:hover {
+    color: #E3C16D;
+    background-color: white;
+    border: 0px;
+}
+
+
+@media (max-width: 768px) {
+    .central-custom-text {
+        font-size: 18px;
+        align-items: center;
+    }
+
+    .central-custom-text h2 {
+        font-size: 35;
+    }
+
+    .central-custom-text button {
+        font-size: 20;
+        padding: 8px 15px;
+    }
 }
 
 /* First Section */
 
 .first-custom-section {
-    padding-top: 50px;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 300px;
 }
 
 .first-custom-section-img {
@@ -56,89 +171,260 @@
     justify-content: left;
 }
 
+.first-custom-section-ul {
+    list-style-type: none;
+    font-size: 30px;
+}
+
+.first-custom-section-ul li {
+    position: relative;
+    padding-left: 25px;
+}
+
+.first-custom-section-ul li:before {
+    content: "\f00c";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 30px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
 .first-custom-section-h2 {
     justify-content: flex-start;
     text-align: flex-start;
 }
 
 .first-custom-section-left {
-    background-color: aqua;
-    border-radius: 15px;
     padding-top: 10px;
 }
 
 .first-section-link {
-    padding-left: 31px;
+    text-decoration: none;
+    position: relative;
+    top: -15px;
 }
 
-ul,
-a {
-    list-style-type: none;
+.first-section-link a {
     text-decoration: none;
+    color: #30399C;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.first-section-link a:hover {
+    text-decoration: none;
+    color: #1A28BF;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+/*.second-custom-section {
+    padding-top: 25px;
 }
 
 .second-custom-section-img {
     width: 400px;
     height: auto;
     border-radius: 15px;
+}*/
+
+.second-custom-section {
+    background-color: #2F374F;
+    padding-top: 70px;
+    padding-bottom: 175px;
+
 }
 
-.candidate-custom-section {
-    width: 100%;
-    height: 200px;
-}
-
-.candidate-choice-custom {
-    background-color: aqua;
-    text-decoration: none;
-    border: 2px solid black;
-    justify-content: center;
-    align-content: center;
-    padding: 20px;
-}
-
-.candidate-choice-custom a {
-    text-decoration: none;
-    padding: 20px;
-}
-
-.candidate-choice-custom a:hover {
-    color: black;
-}
-
-.candidate-choice-custom ul {
-    width: 100%;
-    height: 100%;
+.service-list-header-custom {
+    width: 400px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0;
-    padding: 0; 
-    list-style: none; 
-}
-.candidate-choice-custom li {
-    display: flex;
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
 }
 
+.service-list-header-custom h2 {
+    font-weight: 900;
+    font-size: 35px;
+}
+
+.service-list-header-custom p {
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.custom-header-span {
+    color: #E3C16D;
+}
+
+.service-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.custom-services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.custom-services-span {
+    color: #E3C16D;
+    padding-bottom: 20px;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.custom-services p {
+    flex: 1;
+    color: white;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.custom-services i {
+    padding: 20px;
+}
+
+.fa-icon {
+    color: white;
+}
+
+@media (max-width:768px) {
+    .custom-services-last {
+        margin-bottom: 20px;
+    }
+}
+
+/* Contact-Candidate Section */
+
+.contact-candidacy-custom-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.contact-candidacy-image-custom {
+    text-align: start;
+}
+
+.contact-candidacy-image-custom img {
+    max-width: 70%;
+    height: auto;
+}
+
+.contact-candidacy-choice-custom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;    
+}
+
+.contact-candidacy-choice-custom h2 {
+    color: #141572;     
+    font-weight: 900;
+    font-size: 35px;
+    padding-bottom: 5px;
+}
+
+.contact-candidacy-choice-custom p {
+    font-weight: 600;
+    font-size: 22px;
+    padding-bottom: 10px;
+}
+
+.contact-candidacy-inner-custom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact-candidacy-inner-custom p {
+    font-size: 17px;
+}
+
+.contact-candidacy-inner-custom i {
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.contact-candidacy-inner-custom button {
+    border-radius: 30px;
+    padding: 15px;
+    border-color:#141572;
+    color: white;
+    background-color: #141572;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.contact-candidacy-inner-custom button:hover {
+    color: #141572;
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+}
+
+@media (max-width:768px) {
+    .contact-candidacy-choice-custom {
+        margin-top: 70px;
+    }.contact-candidacy-image-custom {
+        text-align: center;
+    } 
+
+
+
+    .contact-candidacy-image-custom img {
+        width: 350px;
+    }
+}
+
+
+
+/* Contact Section */
 
 .contact-custom-section {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: black;
+    background-color: #2F374F;
+    padding-top: 50px;
 }
 
 .contact-container {
-    position: relative;
-    padding-bottom: 50px;
     color: white;
 }
 
+.contact-container h2 {
+    color:#E3C16D;
+    font-weight: 900;
+    font-size: 35px;
+}
+
+.contact-container p {
+    font-weight: 600;
+    font-size: 17px;
+    padding: 15px;
+}
+
+.contact-container a {
+    text-decoration: none;
+}
+
 .contact-custom-socials {
-    position: absolute;
+    position: relative;
     right: 0;
     bottom: 0;
-    padding-right: 20px;
+    padding-right: 25px;
     padding-bottom: 20px;
 }
 
