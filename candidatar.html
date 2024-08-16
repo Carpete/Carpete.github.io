@@ -30,7 +30,7 @@
                         <a class="nav-link nav-link-last" href="#contacts">Contactos</a>
                     </li>
                     <li class="nav-item nav-item-job">
-                        <a class="nav-link navbar-custom" href="candidatar.html">Recrutamento</a>
+                        <a class="nav-link navbar-custom" href="recrutamento.html">Recrutamento</a>
                     </li>
                 </ul>
             </div>
@@ -60,9 +60,9 @@
                     <div class="row">
                         <div class="col-lg-12 col-md-12">
                             <div class="form-default">
-                                <form action="https://api.web3forms.com/submit" method="POST" class="form-for-me form-main">
+                                <form action="/process_form" method="POST" class="form-for-me form-main">
 
-                                    <input type="hidden" name="access_key" value="979d7032-86fe-4b22-b618-43febbd798f6">
+                                <!-- Input fields -->
 
                                     <div class="form-fields">
                                         <label for="userName">Nome:</label>
@@ -70,7 +70,7 @@
                                     </div>
                                     <div class="form-fields">
                                         <label for="userMail">Email:</label>
-                                        <input type="email" name="userMail" placeholder="example@gmail.com" required>
+                                        <input type="email" name="userMail" placeholder="exemplo@gmail.com" required>
                                     </div>
                                     <div class="form-fields">
                                         <label for="userPhone">Telemóvel:</label>
@@ -89,12 +89,12 @@
 
                                     <div id="fieldsForElder" class="forms-for-elder form-main">
                                         <div class="form-fields">
-                                            <label for="userName">Nome do Parente:</label>
+                                            <label for="relativeName">Nome do Parente:</label>
                                             <input type="text" name="relativeName" placeholder="Nome Completo do Parente" required>
                                         </div>
                                         <div class="form-fields">
                                             <label for="relativeMail">Email do Parente:</label>
-                                            <input type="email" name="relativeMail" placeholder="examplerelative@gmail.com" required>
+                                            <input type="email" name="relativeMail" placeholder="exemploparente@gmail.com" required>
                                         </div>
                                         <div class="form-fields">
                                             <label for="relativePhone">Telemóvel do Parente</label>
