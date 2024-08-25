@@ -1,15 +1,15 @@
 window.onload = function() {
     var modal = document.getElementById("myModal");
-    var span = document.getElementsByClassName("close")[0];
     var button = document.querySelector(".modal-content .button");
+    document.getElementById('body-custom').classList.add('darken');
+    document.body.classList.add('darken-body');
 
     modal.style.display = "block";
 
-    span.onclick = function() {
-        modal.style.display = "none";
-    }
     button.onclick = function() {
         modal.style.display = "none";
+        document.getElementById('body-custom').classList.remove('darken');
+        document.body.classList.remove('darken-body')
     }
 
     window.onclick = function(event) {

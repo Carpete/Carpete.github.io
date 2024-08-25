@@ -15,40 +15,56 @@
 <!-- Pop Up Code -->
 
 <div id="myModal" class="modal">
-
     <div class="modal-content">
-        <span class="close">&times;</span>
-        <p>Esta é uma página dedicada a quem quer trabalhar na Casa de Repouso Faráo, se não
-            está interessado por favor carregue num dos links em baixo, se estiver carregue no botão Eu "Entendi"
+        <h2>ATENÇÃO</h2>
+        <p>Esta página é destinada a pessoas interessadas em trabalhar na Casa de Repouso O FARAÓ. 
+            Se está à procura de uma oportunidade de emprego, continue a navegar. 
+            Caso contrário, pode voltar à página principal ou aceder à página de contacto.
+        </p>
         </p>
 
-        <a href="index.html">Página Principal</a>
-        <a href="candidatar.html">Página para contactar</a>
+        <div class="modal-links">
+            <a href="index.html" class="modal-link">Página Principal</a>
+            <a href="candidatar.html" class="modal-link">Página de Contato</a>
+        </div>
 
-        <button class="button">Eu Entendi</button>
+        <button class="button close">Entendi</button>
     </div>
 </div>
 
 <!-- Rest of the Code -->
 
-<div class="body pt-5">
+<div id="body-custom" class="body pt-5">
     <nav id="navbar" class="navbar navbar-expand-lg navbar-custom fixed-top navbar-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><img src="images/ofaraologo-removebg-preview.png  " class="logo-img"></a>
+            <a class="navbar-brand" href="index.html"><img src="images/ofaraologo-removebg-preview.png" class="logo-img"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon "></span>
             </button>
             <div class="collapse navbar-collapse text-center" id="collapsibleNavbar">
                 <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                          Sobre Nós
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="sobrenos.html">Saiba Mais</a></li>
+                            <li><a class="dropdown-item" href="galeria.html">Galeria de Fotos</a></li>
+                        </ul>
+                    </li>                            
                     <li class="nav-item">
-                        <a class="nav-link" href="sobrenos.html">Sobre nós</a>
+                        <a class="nav-link" href="index.html?scrollTo=Serviços">Serviços</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#Servicos">Serviços</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-link-last" href="#contacts">Contactos</a>
-                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link nav-link-last dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                          Contactos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="candidatar.html">Contacte-nos</a></li>
+                            <li><a class="dropdown-item" href="marque-visita.html">Marque uma Visita</a></li>
+                            <li><a class="dropdown-item" href="#contacts">Visite-nos</a></li>
+                        </ul>
+                    </li> 
                     <li class="nav-item nav-item-job">
                         <a class="nav-link navbar-custom" href="recrutamento.html">Recrutamento</a>
                     </li>
@@ -149,9 +165,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://kit.fontawesome.com/40cabe5444.js" crossorigin="anonymous"></script>
-    <script src="js/toogle_form.js"></script>
-    <script src="js/allowRadioNull.js"></script>
-    <script src="js/loadButtonForm.js"></script>
+    <script src="js/smoothTransition.js"></script>
     <script src="js/popUp.js"></script>
 </body>
 </html>

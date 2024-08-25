@@ -20,15 +20,28 @@
             </button>
             <div class="collapse navbar-collapse text-center" id="collapsibleNavbar">
                 <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                          Sobre Nós
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="sobrenos.html">Saiba Mais</a></li>
+                            <li><a class="dropdown-item" href="galeria.html">Galeria de Fotos</a></li>
+                        </ul>
+                    </li>                            
                     <li class="nav-item">
-                        <a class="nav-link" href="sobrenos.html">Sobre nós</a>
+                        <a class="nav-link" href="index.html?scrollTo=Serviços">Serviços</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#Servicos">Serviços</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-link-last" href="#contacts">Contactos</a>
-                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link nav-link-last dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                          Contactos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="candidatar.html">Contacte-nos</a></li>
+                            <li><a class="dropdown-item" href="marque-visita.html">Marque uma Visita</a></li>
+                            <li><a class="dropdown-item" href="#contacts">Visite-nos</a></li>
+                        </ul>
+                    </li> 
                     <li class="nav-item nav-item-job">
                         <a class="nav-link navbar-custom" href="recrutamento.html">Recrutamento</a>
                     </li>
@@ -89,18 +102,9 @@
 
                                     <div id="fieldsForElder" class="forms-for-elder form-main">
                                         <div class="form-fields">
-                                            <label for="relativeName">Nome do Parente:</label>
+                                            <label for="relativeName">Nome do Familiar:</label>
                                             <input type="text" name="relativeName" placeholder="Nome Completo do Parente" required>
                                         </div>
-                                        <div class="form-fields">
-                                            <label for="relativeMail">Email do Parente:</label>
-                                            <input type="email" name="relativeMail" placeholder="exemploparente@gmail.com" required>
-                                        </div>
-                                        <div class="form-fields">
-                                            <label for="relativePhone">Telemóvel do Parente</label>
-                                            <input type="tel" name="relativePhone" placeholder="968765432" min="9" max="9" pattern="[9]{1}[0-9]{8}">
-                                        </div>
-
                                     </div>
                                     <div class="form-fields forms-message">
                                         <label for="message">Deixe-nos qualquer informação adicional:</label>
@@ -154,5 +158,6 @@
     <script src="js/toogle_form.js"></script>
     <script src="js/allowRadioNull.js"></script>
     <script src="js/loadButtonForm.js"></script>
+    <script src="js/smoothTransition.js"></script>
 </body>
 </html>

@@ -69,7 +69,7 @@ def thank_you_page():
     #Renders after form page
     return render_template("sucess_form.html") 
 
-def send_mail(name, mail, phone, message, relativeName=None, relativeMail=None, relativePhone=None):
+def send_mail(name, mail, phone, message, relativeName=None):
     """Sends mail via personalized email"""
     with smtplib.SMTP('smtp.gmail.com', 587) as smtp:
         smtp.starttls()
@@ -78,8 +78,7 @@ def send_mail(name, mail, phone, message, relativeName=None, relativeMail=None, 
         if relativeName:
             subject = "Formulário Submtido para Familiar"
             body = (f"Nome: {name}\nEmail: {mail}\nTelemóvel: {phone}\n\n"
-                    f"Nome do Relativo: {relativeName}\nEmail do Relativo: {relativeMail}\n"
-                    f"Telemóvel do Relativo: {relativePhone}\n\nMensagem: {message}")
+                    f"Nome do Relativo: {relativeName}\nMensagem: {message}")
         else:
             subject = "Formulário Submtido para Mim"
             body = (f"Nome: {name}\nEmail: {mail}\nTelemóvel: {phone}\n\nMensagem: {message}")

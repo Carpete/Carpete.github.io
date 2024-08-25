@@ -120,102 +120,132 @@
 
 }
 
-/* Forms Header Section */
 
-.forms-header-section-custom {
-    padding-top: 50px;
+
+/* Photo Gallery Introduction */
+
+.gallery-custom-section {
+    margin-top: 50px;
     background-color: #2F374F;
-    max-width: 100%;
-    height: 400px;
+    margin-bottom: 100px;
 }
 
-.form-header {
-    padding-top: 135px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.form-header p{
-    color: #E3C16D;
-    font-size: 55px;
-    font-weight: 900;
-}
-
-
-.forms-introduction {
-    padding-bottom: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-}
-
-.forms-introduction h2 {
-    color: #E3C16D;
-    font-size: 55px;
-    font-weight: 900;
-    padding-bottom: 30px;
-    text-align: center;
-}
-
-.forms-introduction p {
-    font-size: 25px;
-    font-weight: 600;
-}
-
-/* Forms Section */
-
-.forms-section-custom {
-    padding-top: 150px;
-    padding-bottom: 200px;
-    background-color: white;
-}
-
-.form-window {
-    text-align: center;
-}
-
-.form-header label {
-    padding-right: 30px;
-}
-
-.form-main input, select{
-    padding: 10px;
-    border-radius: 7px;
-    border-style: solid;
-}
-
-.form-fields {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    text-align: start;
-    gap: 5px;
-}
-
-.form-fields label {
-    color: #2F374F;
-    font-size: 20px;
-    font-weight: 600;
-}
-
-.form-for-me {
-    display: flex;
-    flex-direction: column;
+.first-gallery-custom {
     padding-top: 30px;
-    gap: 25px;
 }
 
-.forms-for-elder {
-    display: none;
-    flex-direction: column;
-    gap: 25px;
+.gallery-introduction h2 {
+    font-size: 55px;
+    font-weight: 800;
+    color: #E3C16D;
 }
 
-.forms-message textarea {
-    height: 150px;
+.gallery-introduction p {
+    font-size: 17px;
+    font-weight: 600;
+    text-align: left;
+    color: white;
+    padding-top: 10px;
 }
+
+.gallery-introduction-img img {
+    max-height: 400px;
+}
+
+.gallery-links div {
+    margin-right: 40px;
+    margin-top: 20px;
+}
+
+.gallery-links a {
+    text-decoration: none;
+    padding: 10px;  
+}
+
+.gallery-links a:hover{
+    background-color: gray;
+}
+
+.gallery-links-1 {
+    background-color: #E3C16D;
+    width: 250px;
+    padding: 35px 20px 15px 0px;
+    border: 1px solid #2F374F;
+    border-radius: 15px;
+}
+
+.gallery-links-1 a {
+    font-size: 21px;
+    font-weight: 700;
+    color: #2F374F;
+    padding-left: 20px;
+}
+
+.gallery-links-2 {
+    background-color: #E3C16D;
+    width: 250px;
+    padding: 35px 20px 15px 0px;
+    border: 1px solid #E3C16D;
+    border-radius: 15px;
+}
+
+.gallery-links-2 a{
+    font-size: 21px;
+    font-weight: 700;
+    color: #2F374F;
+    padding-left: 20px;
+}
+
+
+/* Photo Gallery */
+
+.photo-custom-section {
+    margin-bottom: 200px;
+}
+
+.photo-gallery-header {
+    border-bottom: 2px solid #E3C16D;
+    margin-bottom: 90px;
+    border-radius: 15px;
+    padding-bottom: 5px;
+}
+
+.photo-gallery-header h2 {
+    font-size: 45px;
+    font-weight: 800;
+    color: #2F374F;
+}
+
+.modal.fade .modal-dialog {
+    transform: scale(0.8);
+    transition: transform 0.3s ease-out;
+}
+
+.modal.show .modal-dialog {
+    transform: scale(1);
+}
+
+.img-gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-gallery img {
+    max-width: 200px;
+    height: auto;
+}
+
+.img-gallery:hover{
+    pointer-events: auto;
+}
+
+.first-row {
+    padding-bottom: 80px;
+}
+
+
+
 
 /* Contact Section */
 

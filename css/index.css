@@ -15,8 +15,8 @@
 .nav-link {
     font-weight: 600;
     font-size: 20px;
-    color: #141572; 
-    margin-right: 7px;
+    color: #2F374F; 
+    margin-right: 20px;
 }
 
 .nav-link-last {
@@ -34,32 +34,94 @@
 }
 
 .navbar-nav .nav-link {
-    color: #141572;
+    color: #2F374F;
 }
 
 .navbar-nav .nav-link:hover {
-    color: #292cd7;
+    color: #243f8b;
 }
 
 .navbar-custom {
     padding-right: 20px;
+    font-weight: 700;
 }
 
 .nav-item-job a {
-    color: #292cd7;
+    color: #2F374F;
 }
 
-@media (max-width: 974px) {
+@media (max-width: 991px) {
     
     .navbar-custom {
-        padding-left: 20px;
+        padding-left: 18px;
     }
 
     .nav-link-last {
-        margin-left: 38px;
+        margin-left: 61px !important; 
+    }
+
+    .nav-link {
+        margin-left: 33px;
+    }
+
+    .nav-link-first {
+        margin-left: 34px;
+    }
+
+    .nav-link-second {
+        margin-right: 15px;
     }
     
 }
+
+.dropdown-menu {
+    background-color: #fff;
+    padding: 20px;
+    border-top: 10px;
+    border-top: 7px solid #E3C16D;
+}
+
+.dropdown-item {
+    color: #2F374F;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.dropdown-item:hover {
+    background-color: #fff;
+    color: #243f8b;
+}
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+  
+.dropdown>.dropdown-toggle:active {
+    pointer-events: none;
+}
+
+@media (max-width: 991px) {
+
+    .dropdown:hover>.dropdown-menu {
+        display: none;
+      }
+    
+    .dropdown>.dropdown-menu {
+        display: block;
+    }
+
+    .dropdown>.dropdown-toggle:active {
+        pointer-events: all;
+    }
+    
+    .dropdown-menu {
+        text-align: center;
+    }
+
+}
+
+
+/* SubSection */
 
 
 .subsection-custom {
@@ -115,25 +177,11 @@
     justify-content: center;
     align-items: center;
     vertical-align: middle;
-    font-size: 20px;
+    font-size: 25px;
+    font-weight: 600;
     padding: 16px 22px 19px 22px;
     border-radius: 30px;
-    font-weight: 600;
-}
-
-/*
-.button1 {
-    background-color: rgba(0,0,0,0);
-    color: white;
-    border-color: white;
-    border-style: solid;
-    margin-left: 25px;
-}
-
-.button1:hover {
-    color: black;
-    background-color: white;
-    border-color: black;
+    font-weight: 700;
 }
 
 .button2 {
@@ -192,7 +240,7 @@
 .first-custom-section-right h2 {
     font-size: 35px;
     font-weight: 900;
-    color: #141572;
+    color: #2F374F;
 }
 
 .first-custom-section-ul li {
@@ -220,14 +268,14 @@
 
 .first-section-link a {
     text-decoration: none;
-    color: #141572;
+    color: #2F374F;
     font-weight: 700;
     font-size: 30px;
 }
 
 .first-section-link a:hover {
     text-decoration: none;
-    color: #292cd7;
+    color: #243f8b;
 }
 
 @media (max-width:974px) {
@@ -342,7 +390,7 @@
 }
 
 .contact-candidacy-choice-custom h2 {
-    color: #141572;     
+    color: #2F374F;     
     font-weight: 900;
     font-size: 35px;
     padding-bottom: 5px;
@@ -377,15 +425,16 @@
     align-items: center;
     border-radius: 30px;
     padding: 10px 11px 13px 11px;
-    border-color:#141572;
+    border-color:#2F374F;
+    border-style: solid;
     color: white;
-    background-color: #141572;
+    background-color: #2F374F;
     font-weight: 600;
     font-size: 20px;
 }
 
 .contact-candidacy-inner-custom button:hover {
-    color: #141572;
+    color: #2F374F;
     background-color: white;
     border-style: solid;
     border-color: black;

@@ -28,8 +28,8 @@
 .nav-link {
     font-weight: 600;
     font-size: 20px;
-    color: #141572; 
-    margin-right: 7px;
+    color: #2F374F; 
+    margin-right: 20px;
 }
 
 .nav-link-last {
@@ -47,32 +47,90 @@
 }
 
 .navbar-nav .nav-link {
-    color: #141572;
+    color: #2F374F;
 }
 
 .navbar-nav .nav-link:hover {
-    color: #292cd7;
+    color: #243f8b;
 }
 
 .navbar-custom {
     padding-right: 20px;
+    font-weight: 700;
 }
 
-.nav-item-job a{
-    border-radius: 30px;
-    color: white;
+.nav-item-job a {
+    color: #2F374F;
 }
 
-@media (max-width: 974px) {
+@media (max-width: 991px) {
     
     .navbar-custom {
-        padding-left: 20px;
+        padding-left: 18px;
     }
 
     .nav-link-last {
-        margin-left: 38px;
+        margin-left: 61px !important; 
+    }
+
+    .nav-link {
+        margin-left: 33px;
+    }
+
+    .nav-link-first {
+        margin-left: 34px;
+    }
+
+    .nav-link-second {
+        margin-right: 15px;
     }
     
+}
+
+.dropdown-menu {
+    background-color: #fff;
+    padding: 20px;
+    border-top: 10px;
+    border-top: 7px solid #E3C16D;
+}
+
+.dropdown-item {
+    color: #2F374F;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.dropdown-item:hover {
+    background-color: #fff;
+    color: #243f8b;
+}
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+  
+.dropdown>.dropdown-toggle:active {
+    pointer-events: none;
+}
+
+@media (max-width: 974px) {
+
+    .dropdown:hover>.dropdown-menu {
+        display: none;
+      }
+    
+    .dropdown>.dropdown-menu {
+        display: block;
+    }
+
+    .dropdown>.dropdown-toggle:active {
+        pointer-events: all;
+    }
+    
+    .dropdown-menu {
+        text-align: center;
+    }
+
 }
 
 /*//////////*/
@@ -134,4 +192,155 @@
     text-align: center;
     justify-content: center;
     align-items: center;
+}
+
+/* Contact-Candidate Section */
+
+.contact-candidacy-custom-section {
+    padding-top: 120px;
+    padding-bottom: 150px;
+}
+
+.contact-candidacy-image-custom {
+    text-align: start;
+}
+
+.contact-candidacy-image-custom img {
+    max-width: 70%;
+    height: auto;
+}
+
+.contact-candidacy-choice-custom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;    
+}
+
+.contact-candidacy-choice-custom h2 {
+    color: #2F374F;     
+    font-weight: 900;
+    font-size: 35px;
+    padding-bottom: 5px;
+}
+
+.contact-candidacy-choice-custom p {
+    font-weight: 600;
+    font-size: 22px;
+    padding-bottom: 10px;
+}
+
+.contact-candidacy-inner-custom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact-candidacy-inner-custom p {
+    font-size: 17px;
+}
+
+.contact-candidacy-inner-custom i {
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.contact-candidacy-inner-custom button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    padding: 10px 11px 13px 11px;
+    border-color:#2F374F;
+    border-style: solid;
+    color: white;
+    background-color: #2F374F;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.contact-candidacy-inner-custom button:hover {
+    color: #2F374F;
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+}
+
+@media (max-width:768px) {
+    .contact-candidacy-choice-custom {
+        margin-top: 70px;
+    }
+    .contact-candidacy-image-custom {
+        text-align: center;
+    }
+    .contact-candidacy-image-custom img {
+        width: 350px;
+    }
+    .contact-candidacy-inner-custom button {
+        margin-bottom: 15px;
+    }
+}
+
+
+
+
+
+/* Contact Section */
+
+.contact-custom-section {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #2F374F;
+    padding-top: 50px;
+}
+
+.contact-container {
+    color: white;
+}
+
+.contact-container h2 {
+    color:#E3C16D;
+    font-weight: 900;
+    font-size: 35px;
+}
+
+.contact-container p {
+    font-weight: 600;
+    font-size: 17px;
+    padding: 15px;
+}
+
+.contact-container a {
+    text-decoration: none;
+}
+
+.contact-custom-socials {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    padding-right: 25px;
+    padding-bottom: 20px;
+}
+
+.contact-container-h2 {
+    padding-top: 15px;
+}
+
+.contact-custom-socials ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-custom-socials ul li {
+    margin-left: 10px;
+}
+
+.contact-custom-socials ul li a {
+    text-decoration: none;
+    color: inherit;
 }

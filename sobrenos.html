@@ -22,15 +22,28 @@
             </button>
             <div class="collapse navbar-collapse text-center" id="collapsibleNavbar">
                 <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                          Sobre Nós
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="sobrenos.html">Saiba Mais</a></li>
+                            <li><a class="dropdown-item" href="galeria.html">Galeria de Fotos</a></li>
+                        </ul>
+                    </li>                            
                     <li class="nav-item">
-                        <a class="nav-link" href="sobrenos.html">Sobre nós</a>
+                        <a class="nav-link" href="index.html?scrollTo=Serviços">Serviços</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#Servicos">Serviços</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-link-last" href="#contacts">Contactos</a>
-                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link nav-link-last dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                          Contactos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="candidatar.html">Contacte-nos</a></li>
+                            <li><a class="dropdown-item" href="marque-visita.html">Marque uma Visita</a></li>
+                            <li><a class="dropdown-item" href="#contacts">Visite-nos</a></li>
+                        </ul>
+                    </li> 
                     <li class="nav-item nav-item-job">
                         <a class="nav-link navbar-custom" href="recrutamento.html">Recrutamento</a>
                     </li>
@@ -127,11 +140,85 @@
             </div>
         </div>
     </section>
+    <div>
+        <section class="contact-candidacy-custom-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-lg-8 col-md-8 contact-candidacy-choice-custom">
+                        <h2>Contacte-nos</h2>
+                        <p>Você está em boas mãos</p>
+                        <div class="row">
+                            <div class="col-lg-5 col-md-5 contact-candidacy-inner-custom">
+                                <i class="fa-solid fa-person fa-2xl fa-icon-contact"></i>
+                                <p>Obter informações sobre os nossos serviços, disponibilidade e processo 
+                                    de admissão para si.</p>
+                                <button onclick="window.location.href='candidatar.html?form=1'" class="contact-candidacy-inner-button-custom button-1-candidacy">
+                                    Para mim
+                                </button>
+                            </div>
+                            <div class="col-lg-2 col-md-2">
+
+                            </div>
+                            <div class="col-lg-5 col-md-5 contact-candidacy-inner-custom">
+                                <i class="fa-solid fa-person-cane fa-2xl fa-icon-contact"></i>
+                                <p>Saiba como podemos ajudar o seu ente querido com os nossos planos
+                                    personalizados.</p>
+                                    <button onclick="window.location.href='candidatar.html?form=2'" class="contact-candidacy-inner-button-custom button-2-candidacy">
+                                        Para um familiar
+                                    </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <!-- GPS -->
+    
+
+    <div>
+        <section id="contacts" class="contact-custom-section">
+            <div class="contact-container">
+                <div>
+                    <h2>Visite-nos</h2>
+                </div>
+                <div>   
+                    <p>
+                        O FARAÓ - Casa de Repouso
+                    <br>
+                        Largo da Madalena, 8000-255 Faro
+                    <br>
+                        Email: <a href="mailto:">geral@casaderepousofarao.pt</a>
+                    <br> 
+                        Telefone: 289823356
+                    <br>
+                        2024 <i class="fa-regular fa-copyright"></i> All rights reserved to O FARAÓ - Casa de Repouso
+                    </p>
+                </div>
+                <div class="contact-custom-socials d-flex justify-content-end align-content-end align-items-end">
+                    <ul>
+                        <li>
+                            <a href="https://www.instagram.com/farao.lar?igsh=MTZ2enlubmFseW5mNA=="><i class="fa-brands fa-instagram fa-xl"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/people/Casa-de-Repouso-Fara%C3%B3/61555987790891/"><i class="fa-brands fa-facebook fa-xl"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+    </div>   
 </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://kit.fontawesome.com/40cabe5444.js" crossorigin="anonymous"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script src="js/smoothTransition.js"></script>
 </body>
 </html>

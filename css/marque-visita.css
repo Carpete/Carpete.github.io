@@ -100,7 +100,7 @@
     pointer-events: none;
 }
 
-@media (max-width: 974px) {
+@media (max-width: 991px) {
 
     .dropdown:hover>.dropdown-menu {
         display: none;
@@ -119,6 +119,7 @@
     }
 
 }
+
 
 /* Forms Header Section */
 
@@ -215,6 +216,20 @@
 
 .forms-message textarea {
     height: 150px;
+}
+
+.date-custom {
+    position: relative;
+    left: -.9%;
+}
+
+.hour-custom {
+    position: relative;
+    left: .9%;
+}
+
+input[type=time]::-webkit-datetime-edit-ampm-field {
+    display: none;
 }
 
 /* Contact Section */

@@ -9,15 +9,121 @@
 /* Pop Up */
 
 .modal{
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
-    height: 100%;
+    position: fixed;
+    top: 20%;
+    inset: 0px;
+    width: 60rem;
+    height: 200rem;
+    max-width: 100vw;
+    max-height: 100dvh;
+    margin: auto;
+    margin-top: 12%;
 }
 
 .modal-content{
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
 }
+
+.modal-content h2{
+    color: #2F374F;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.modal-content p {
+    font-size: 22px;
+    font-weight: 600;
+    padding-top: 20px;
+}
+
+.modal-links {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+    margin-top: -30px;
+}
+
+.modal-links a{
+    text-decoration: none;
+    padding-bottom: 6px;
+    padding-top: 18px;
+    font-size: 25px;
+    font-weight: 600;
+    color: #2F374F;
+    border-bottom: 3px solid #2F374F;
+    border-radius: 3px;
+}
+
+.modal-links a:hover {
+    color: #243f8b;
+}
+
+.modal-content button {
+    padding: 17px 25px 20px 25px;
+    font-size: 28px;
+    font-weight: 700;
+    border-radius: 30px;
+    border: 2px solid #E3C16D;
+    color: #ffffff;
+    background-color: #E3C16D;
+}
+
+.modal-content button:hover {
+    color: #E3C16D;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+}
+
+.darken {
+    filter: brightness(0.5);
+}
+
+body.darken-body {
+    overflow: hidden;
+}
+
+/* Responsive Modal */
+@media screen and (max-width: 768px) {
+    .modal-content {
+        width: 90%;
+        margin: 30% auto;
+        padding: 15px;
+    }
+
+    .modal-links {
+        flex-direction: column;
+    }
+
+    .modal-link {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .modal-content {
+        width: 95%;
+        margin: 40% auto;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
+
 
 /* NavBar */
 
@@ -28,8 +134,8 @@
 .nav-link {
     font-weight: 600;
     font-size: 20px;
-    color: #141572; 
-    margin-right: 7px;
+    color: #2F374F; 
+    margin-right: 20px;
 }
 
 .nav-link-last {
@@ -47,32 +153,89 @@
 }
 
 .navbar-nav .nav-link {
-    color: #141572;
+    color: #2F374F;
 }
 
 .navbar-nav .nav-link:hover {
-    color: #292cd7;
+    color: #243f8b;
 }
 
 .navbar-custom {
     padding-right: 20px;
+    font-weight: 700;
 }
 
-.nav-item-job a{
-    border-radius: 30px;
-    color: white;
+.nav-item-job a {
+    color: #2F374F;
 }
 
-@media (max-width: 974px) {
+@media (max-width: 991px) {
     
     .navbar-custom {
-        padding-left: 20px;
+        padding-left: 18px;
     }
 
     .nav-link-last {
-        margin-left: 38px;
+        margin-left: 61px !important; 
+    }
+
+    .nav-link {
+        margin-left: 33px;
+    }
+
+    .nav-link-first {
+        margin-left: 34px;
+    }
+
+    .nav-link-second {
+        margin-right: 15px;
     }
     
+}
+.dropdown-menu {
+    background-color: #fff;
+    padding: 20px;
+    border-top: 10px;
+    border-top: 7px solid #E3C16D;
+}
+
+.dropdown-item {
+    color: #2F374F;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.dropdown-item:hover {
+    background-color: #fff;
+    color: #243f8b;
+}
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+  
+.dropdown>.dropdown-toggle:active {
+    pointer-events: none;
+}
+
+@media (max-width: 974px) {
+
+    .dropdown:hover>.dropdown-menu {
+        display: none;
+      }
+    
+    .dropdown>.dropdown-menu {
+        display: block;
+    }
+
+    .dropdown>.dropdown-toggle:active {
+        pointer-events: all;
+    }
+    
+    .dropdown-menu {
+        text-align: center;
+    }
+
 }
 
 /* Forms Header Section */
@@ -107,9 +270,9 @@
 }
 
 .forms-introduction h2 {
-    color: #141572;
-    font-size: 45px;
-    font-weight: 700;
+    color: #E3C16D;
+    font-size: 55px;
+    font-weight: 900;
     padding-bottom: 30px;
     text-align: center;
 }
@@ -150,7 +313,7 @@
 }
 
 .form-fields label {
-    color: #141572;
+    color: #2F374F;
     font-size: 20px;
     font-weight: 600;
 }
