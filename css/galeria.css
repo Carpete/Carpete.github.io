@@ -148,8 +148,16 @@
     padding-top: 10px;
 }
 
+.gallery-introduction-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .gallery-introduction-img img {
     max-height: 400px;
+    box-shadow: 8px 8px 8px #191d29;
+    max-width: fit-content;
 }
 
 .gallery-links div {
@@ -167,33 +175,41 @@
 }
 
 .gallery-links-1 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
     background-color: #E3C16D;
     width: 250px;
-    padding: 35px 20px 15px 0px;
-    border: 1px solid #2F374F;
+    border: 1px solid #E3C16D;
     border-radius: 15px;
+    padding: 10px;
 }
 
 .gallery-links-1 a {
     font-size: 21px;
     font-weight: 700;
     color: #2F374F;
-    padding-left: 20px;
+    padding: 20px 20px 18px 20px;
 }
 
 .gallery-links-2 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
     background-color: #E3C16D;
     width: 250px;
-    padding: 35px 20px 15px 0px;
     border: 1px solid #E3C16D;
     border-radius: 15px;
+    padding: 10px;
 }
 
 .gallery-links-2 a{
     font-size: 21px;
     font-weight: 700;
     color: #2F374F;
-    padding-left: 20px;
+    padding: 20px 20px 18px 20px;
 }
 
 
@@ -244,7 +260,23 @@
     padding-bottom: 80px;
 }
 
+.modal {
+    position: fixed;
+    top: 15%;
+}
 
+.modal-content>.modal-body{
+    max-width: 1000px;
+    height: auto;
+}
+
+.carousel-item img{
+    max-width: 800px;
+    height: auto;
+}
+.carousel-item>span {
+    float: right;
+}
 
 
 /* Contact Section */

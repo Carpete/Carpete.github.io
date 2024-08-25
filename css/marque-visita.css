@@ -169,7 +169,7 @@
 
 .forms-section-custom {
     padding-top: 150px;
-    padding-bottom: 200px;
+    padding-bottom: 150px;
     background-color: white;
 }
 
@@ -228,8 +228,10 @@
     left: .9%;
 }
 
-input[type=time]::-webkit-datetime-edit-ampm-field {
-    display: none;
+/* Google GPS Map */
+
+.ratio {
+    --bs-aspect-ratio: 23%;
 }
 
 /* Contact Section */
