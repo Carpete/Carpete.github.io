@@ -92,9 +92,9 @@
                                     <div class="form-fields">
                                         <label for="formType">Para quem está a questionar?</label>
                                         <select id="formType" name="formType" onchange="toggleForm()" required>
-                                            <option value="">Selecione uma opção</option>
-                                            <option value="paraMim">Para Mim</option>
-                                            <option value="paraFamiliar">Para um Familiar</option>
+                                            <option class="decorated"  value="">Selecione uma opção</option>
+                                            <option class="decorated"  value="paraMim">Para Mim</option>
+                                            <option class="decorated"  value="paraFamiliar">Para um Familiar</option>
                                         </select>
                                     </div>
 
@@ -110,7 +110,9 @@
                                         <label for="message">Deixe-nos qualquer informação adicional:</label>
                                         <textarea name="message" placeholder="Mensagem"></textarea>
                                     </div>
-                                    <input type="submit" name="submit" value="Enviar">
+                                    <div class="form-button">
+                                        <button type="submit">Enviar</button>
+                                    </div>
                                 </form>
                             </div>
                         </div>

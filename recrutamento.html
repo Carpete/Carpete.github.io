@@ -112,15 +112,17 @@
                                         <label for="userPhone">Telemóvel:</label>
                                         <input type="tel" name="userPhone" placeholder="968765432" min="9" max="9" pattern="[9]{1}[0-9]{8}" required>
                                     </div>
-                                    <div class="form-fields">
-                                        <label for="userCV">CV:</label>
-                                        <input type="file" name="userCV" required>
+                                    <div class="form-fields cv-field">
+                                        <label for="files">CV:</label>
+                                        <input class="customFileInput" type="file" name="files" accept=".pdf" required>
                                     </div>
                                     <div class="form-fields forms-message">
                                         <label for="message">Deixe-nos qualquer informação adicional:</label>
                                         <textarea name="message" placeholder="Mensagem"></textarea>
                                     </div>
-                                    <input type="submit" name="submit" value="Enviar">
+                                    <div class="form-button">
+                                        <button type="submit">Enviar</button>
+                                    </div>
                                 </form>
                             </div>
                         </div>
