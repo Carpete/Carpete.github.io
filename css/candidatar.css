@@ -101,17 +101,13 @@
 }
 
 @media (max-width: 974px) {
-
-    .dropdown:hover>.dropdown-menu {
-        display: none;
-      }
-    
+   
     .dropdown>.dropdown-menu {
         display: block;
     }
 
     .dropdown>.dropdown-toggle:active {
-        pointer-events: all;
+        pointer-events: none;
     }
     
     .dropdown-menu {
@@ -181,9 +177,10 @@
 }
 
 .form-main input, select{
-    padding: 10px;
-    border-radius: 7px;
+    padding: 13px;
+    border-radius: 5px;
     border-style: solid;
+    font-weight: 500;
 }
 
 .form-fields {
@@ -213,8 +210,47 @@
     gap: 25px;
 }
 
-.forms-message textarea {
+.forms-message>textarea {
     height: 150px;
+}
+
+.forms-message>textarea:focus {
+    outline: none;
+    border: 2px solid #2F374F;
+}
+
+.form-button {
+    margin-top: 10px;
+}
+
+.form-button>button {
+    width: 30%;
+    padding: 15px;
+    border: 1px solid #E3C16D;
+    border-radius: 15px;
+    background-color: #E3C16D;
+    color: #2F374F;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.form-button>button:hover {
+    background-color: #d2b364;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid #2F374F;
+  }
+
+select {
+    background-color: #2F374F;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+select>option {
+    color: #ffffff;
 }
 
 /* Contact Section */

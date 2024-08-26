@@ -114,17 +114,13 @@
 }
 
 @media (max-width: 974px) {
-
-    .dropdown:hover>.dropdown-menu {
-        display: none;
-      }
-    
+   
     .dropdown>.dropdown-menu {
         display: block;
     }
 
     .dropdown>.dropdown-toggle:active {
-        pointer-events: all;
+        pointer-events: none;
     }
     
     .dropdown-menu {
@@ -185,7 +181,7 @@
 }
 
 .mission-section-custom h2 {
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 700;
     padding-bottom: 20px;
     color: white;
@@ -196,6 +192,20 @@
     justify-content: center;
     align-items: center;
     color: white;
+    margin-top: 70px;
+    margin-bottom: 100px;
+}
+
+.bla-bla h2 {
+    font-size: 35px;
+    font-weight: 800;
+}
+
+.bla-bla p {
+
+    font-size: 17px;
+    font-weight: 600;
+    padding-top: 10px;
 }
 
 /* Google GPS Map */

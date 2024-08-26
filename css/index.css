@@ -100,18 +100,14 @@
     pointer-events: none;
 }
 
-@media (max-width: 991px) {
-
-    .dropdown:hover>.dropdown-menu {
-        display: none;
-      }
-    
+@media (max-width: 974px) {
+   
     .dropdown>.dropdown-menu {
         display: block;
     }
 
     .dropdown>.dropdown-toggle:active {
-        pointer-events: all;
+        pointer-events: none;
     }
     
     .dropdown-menu {
@@ -280,6 +276,9 @@
 
 @media (max-width:974px) {
     
+    .first-custom-section-right {
+        padding-bottom: 60px;
+    }
 }
 
 /*.second-custom-section {
