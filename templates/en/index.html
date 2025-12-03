@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Seção Hero com Navbar -->
+    <div class="navbar-container-1">
+        <nav id="navbar" class="navbar navbar-expand-xl navbar-custom fixed-top navbar-light">
+            <div class="container navbar-custom-container">
+                <a class="navbar-brand" href="{{ url_for('home') }}">
+                    <img src="{{ url_for('static', filename='images/logo5.png') }}" alt="Logo" class="navbar-img-logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse fade-trigger" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Sobre Nós</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Portfólio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('test') }}">Contactos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-language-option" href="{{ url_for('home') }}">PT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-language-option" href="{{ url_for('home_en') }}">EN</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container hero-div-custom">
+            <div class="hero-text text-start">
+                <h1 class="hero-title">Lore Ipsum Text</h1>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Resto do conteúdo da página -->
+     <div>
+        <section class="first-custom-section">
+            <div class="container">
+                <div class="row first-custom-section-row d-flex align-items-stretch justify-content-center">
+                    <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 first-custom-section-right ">
+                        <img src="{{ url_for('static', filename='images/test-image.jpeg') }}" alt="Logo" class="first-section-img img-fluid">
+                    </div>
+                    <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 justify-content-start first-custom-section-left">
+                        <div class="about-us-text-container">
+                            <span>Sobre Nós</span>
+                        </div>
+                        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dapibus lectus congue,
+                             lacinia tortor eu, pretium odio. Donec id semper elit. Mauris malesuada ante id egestas
+                              iaculis. Donec non malesuada lacus, non dictum purus. Mauris eget ligula quis tellus
+                               mattis porttitor non congue quam. Suspendisse potenti. 
+                        </p>
+                        <a class="first-section-link" href="">Saber Mais <i class="fa-solid fa-plus"></i></a>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div>
+        <section class="second-custom-section">
+            <div class="container">
+        <div class="title">
+            <h3 class="mt-5">Carousel</h3>
+        </div>
+        
+        <div class="carrousel-portfolio" id="carousel">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mr-auto ml-auto">
+
+                    <!-- Carousel Card -->
+                    <div class="card card-raised card-carousel">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000">
+                          <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1" class=""></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2" class=""></li>
+                          </ol>
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img class="d-block w-100" src="https://rawgit.com/creativetimofficial/material-kit/master/assets/img/bg.jpg"
+                              alt="First slide">
+                              <div class="carousel-caption d-none d-md-block">
+                                <h4>
+                                    <i class="material-icons">location_on</i>
+                                    Yellowstone National Park, United States
+                                </h4>
+                              </div>
+                            </div>
+                            <div class="carousel-item">
+                              <img class="d-block w-100" src="https://rawgit.com/creativetimofficial/material-kit/master/assets/img/bg2.jpg"  alt="Second slide">
+                              <div class="carousel-caption d-none d-md-block">
+                                <h4>
+                                    <i class="material-icons">location_on</i>
+                                    Somewhere Beyond, United States
+                                </h4>
+                              </div>
+                            </div>
+                            <div class="carousel-item">
+                              <img class="d-block w-100" src="https://rawgit.com/creativetimofficial/material-kit/master/assets/img/bg3.jpg" alt="Third slide">
+                              <div class="carousel-caption d-none d-md-block">
+                                <h4>
+                                    <i class="material-icons">location_on</i>
+                                    Yellowstone National Park, United States
+                                </h4>
+                              </div>
+                            </div>
+                          </div>
+                          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <i class="material-icons">keyboard_arrow_left</i>
+                            <span class="sr-only">Previous</span>
+                          </a>
+                          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <i class="material-icons">keyboard_arrow_right</i>
+                            <span class="sr-only">Next</span>
+                          </a>
+                        </div>
+                    </div>
+                    <!-- End Carousel Card -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </section>
+    </div>
+    <div>
+        <section class="third-custom-section">
+            <div class="container">
+
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='scripts/fullOpacityNavBar.js') }}"></script>
+    <script src="https://kit.fontawesome.com/40cabe5444.js" crossorigin="anonymous"></script>
+
+    <script>
+        const fadeObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("animate");
+        }
+    });
+}, {
+    threshold: 0.3
+});
+
+document.querySelectorAll(".fade-trigger").forEach(el => fadeObserver.observe(el));
+
+    </script>
+
+    <script>
+        // SLIDE RIGHT OBSERVER
+const slideObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("animate");
+        }
+    });
+}, {
+    threshold: 0.3
+});
+
+document.querySelectorAll(".slide-trigger").forEach(el => slideObserver.observe(el));
+
+    </script>
+
+</body>
+</html>
