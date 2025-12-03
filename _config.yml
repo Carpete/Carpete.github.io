@@ -1,0 +1,18 @@
+# Basic Configuration
+title: Rivents
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://yourusername.github.io" # the base hostname & protocol for your site
+
+# Exclusions (The Fix)
+exclude:
+  - venv/
+  # The default GitHub Pages excludes
+  - README.md
+  - LICENSE.txt
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
